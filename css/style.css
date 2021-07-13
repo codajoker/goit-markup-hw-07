@@ -105,33 +105,29 @@ section {
 }
 
 /* Навигация */
-.header {
+.header-page {
   border: 1px solid #ececec;
   padding: 24px 0 25px 0;
   position: relative;
 }
-.header .link {
+.header-page__wrapper {
   display: flex;
   align-items: center;
-  position: relative;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--text-headers);
   transition: color var(--main-duration) var(--timing-function);
 }
-.header .link:hover,
-.header .link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--blue-color);
-}
-.header-flex {
-  display: flex;
-  align-items: center;
-}
-nav {
-  display: flex;
-  align-items: center;
 }
 .logo {
   font-family: Raleway;
@@ -141,19 +137,25 @@ nav {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.logo > .logo-accent {
+.logo__accent {
   color: var(--blue-color);
 }
 .site-nav {
   display: flex;
   margin-left: 94px;
 }
+.site-nav__link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--text-headers);
+}
 
-.site-nav .nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link::after {
+.site-nav__link::after {
   content: '';
   display: block;
   position: absolute;
@@ -168,15 +170,15 @@ nav {
   transition: transform var(--main-duration) var(--timing-function),
     opacity var(--main-duration) var(--timing-function);
 }
-.site-nav .link:hover::after {
+.site-nav__link:hover::after {
   transform: scaleX(1);
   opacity: 1;
 }
 
-.site-nav .link.current {
+.site-nav__link--active {
   color: var(--blue-color);
 }
-.site-nav .link.current::after {
+.site-nav__link--active::after {
   transform: scaleX(1);
   opacity: 1;
 }
@@ -185,14 +187,14 @@ nav {
   margin-left: auto;
 }
 
-.site-contact .contact-item + .contact-item {
+.site-contact__item + .site-contact__item {
   margin-left: 50px;
 }
-.site-contact .link {
+.site-contact__link {
   color: var(--text-descr);
 }
 
-.contact-icon {
+.site-contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
