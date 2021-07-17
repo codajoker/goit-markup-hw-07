@@ -5,7 +5,7 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000;
-}
-.logo__accent {
-  color: $accent-color;
+  &--accent {
+    color: $accent-color;
+  }
 }
