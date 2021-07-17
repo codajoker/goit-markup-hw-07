@@ -448,9 +448,7 @@ section {
 
   color: var(--primary-white-color);
 }
-.logo--accent {
-  color: var(--blue-color);
-}
+
 .address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -608,7 +606,6 @@ section {
   margin-bottom: 10px;
 }
 .modal-form__label {
-  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
