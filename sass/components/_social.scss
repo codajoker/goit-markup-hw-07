@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   padding: 12px;
-  color: var(--main-icon-color);
+  color: $main-icon-color;
   border-radius: 50%;
   transition: background-color $main-duration $timing-function,
     color $main-duration $timing-function;
